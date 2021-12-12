@@ -19,7 +19,7 @@
         }
         body{
             position: relative;
-            background-color: rgb(245, 245, 245);
+            background-color: rgb(248, 248, 248);
         }
         h1, h2, h3{
             font-family: var(--fonte-de-titulo);
@@ -45,10 +45,23 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+        header h1{
+            text-shadow: 0px 1px 5px black;
+        }
+        header p{
+            margin-top: 1rem;
+            font-size: .8rem;
+            line-height: 1.2rem;
+        }
         section.sobre{
+            margin: auto;
+            max-width: 800px;
             height: auto;
+            background-color: rgb(255, 255, 255);
             text-align: center;
             padding: 2rem;
+            border-radius: 0 0 3px 3px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.322);
         }
         section.sobre h2{
             max-width: 800px;
@@ -60,21 +73,31 @@
             line-height: 1.3rem;
         }
         section.arquivos{
+            margin: 4rem 0;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
         }
         .arquivos > h2{
+            margin: 1rem;
             width: 100%;
             text-align: center;
         }
         .arquivos div{
-            margin: auto;
+            margin: 1rem auto;
             width: 350px;
+            padding: 1rem;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.322);
+            border-radius: 3px;
+        }
+        .arquivos h3{
+            margin: .5rem;
         }
         section.artigos{
             position: relative;
-            margin: 3rem 0;
+            border-top: .5px solid rgb(175, 175, 175);
+            margin: 5rem auto;
+            max-width: 1200px;
             padding: 1rem;
         }
         .artigos > h2{
@@ -86,18 +109,22 @@
             align-items: left;
         }
         div.imagem{
-            margin: 1rem;
+            margin: .5rem;
             width: 400px;
             height: 300px;
             overflow: hidden;
         }
         div.text-previa{
-            margin: 1rem;
+            margin: .5rem;
             max-width: 600px;
             height: 300px;
+            background-color: rgb(241, 241, 241);
+        }
+        .text-previa h3{
+            margin: 1rem;
         }
         .text-previa p{
-          margin-top: 1rem;
+          margin: 1rem;
         }
         div.imagem img{
            width: 100%;  
