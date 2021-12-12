@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo | Mário Ferreira dos Santos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            border: none;
+        }
+        :root{
+            --fonte-de-titulo: 'Arvo', serif;
+        }
+        body{
+            position: relative;
+            background-color: rgb(245, 245, 245);
+        }
+        h1, h2, h3{
+            font-family: var(--fonte-de-titulo);
+            font-weight: normal;
+        }
+        header{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: black url(imagens/athens-art-school.jpg) no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        header div.filtro{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.534);
+        }
+        header  div.text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        section.sobre{
+            height: auto;
+            text-align: center;
+            padding: 2rem;
+        }
+        section.sobre h2{
+            max-width: 800px;
+            margin: 3rem auto 1rem auto;
+        }
+        section.sobre p{
+            max-width: 800px;
+            margin: 1rem auto;
+            line-height: 1.3rem;
+        }
+        section.arquivos{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .arquivos > h2{
+            width: 100%;
+            text-align: center;
+        }
+        .arquivos div{
+            margin: auto;
+            width: 350px;
+        }
+        section.artigos{
+            position: relative;
+            margin: 3rem 0;
+            padding: 1rem;
+        }
+        .artigos > h2{
+            margin-bottom: 2rem;
+        }
+        .artigo{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: left;
+        }
+        div.imagem{
+            margin: 1rem;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+        }
+        div.text-previa{
+            margin: 1rem;
+            max-width: 600px;
+            height: 300px;
+        }
+        .text-previa p{
+          margin-top: 1rem;
+        }
+        div.imagem img{
+           width: 100%;  
+        }
+        section.video{
+            position: relative;
+            height: 80vh;
+            padding: 1rem;
+            background: black url(imagens/papel-de-parede.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .video > div{
+            position: relative;
+            margin: auto;
+            max-width: 600px;
+            height: 100%;
+        }
+        .video div > iframe{
+            position: absolute;
+            width: 100%;
+            height: 350px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        aside.links{
+            height: 300px;
+        }
+        aside.formulario{
+            height: 100vh;
+        }
+        aside > h2{
+            text-align: center;
+        }
+        footer{
+            background-color: rgb(17, 17, 17);
+            padding: 2rem;
+            text-align: center;
+            color: whitesmoke;
+        }
+        footer > h3{
+            margin-bottom: 1rem;
+        }
+        footer > p{
+            margin: auto;
+            max-width: 800px;
+            padding: .5rem;
+        }
+        footer > a{
+            padding: .5rem;
+            margin-bottom: .5rem;
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="filtro">
+            <div class="text">
+                <h1>ACERVO | VIDA E OBRA DE MÁRIO FERREIRA DOS SANTOS</h1>
+                 <P>PODES PERDER ATÉ A TUA ÚLTIMA ESPERANÇA, MAS NUNCA DEVES PERDER A TUA DIGNIDADE.</P>
+            </div>   
+        </div>
+    </header>
+    <main>
+        <section class="sobre">
+            <h2>QUEM FOI MÁRIO FERREIRA DOS SANTOS?</h2>
+            <p>Quando a obra de um único autor é mais rica e poderosa que a cultura inteira do seu país, das duas uma: ou o país consente em aprender com ele ou recusa o presente dos céus e inflige a si próprio o merecido castigo pelo pecado da soberba, condenando-se ao definhamento intelectual e a todo o cortejo de misérias morais que necessariamente o acompanham.
+            por Olavo de Carvalho.</p>
+        </section>
+        <section class="arquivos">
+            <h2>ARQUIVOS</h2>
+            <div>
+                <h3>Trabalhos Acadêmicos (links)</h3>
+                <p>Smith&Co Business strategy involves a proprietary set of actions that enables a company to be more than just the sum of its parts. The most important role of the is to help business units achieve leadership points.</p>
+            </div>
+            <div>
+                <h3>PDFs</h3>
+                <p>Smith&Co Business strategy involves a proprietary set of actions that enables a company to be more than just the sum of its parts. The most important role of the is to help business units achieve leadership points.</p>
+            </div>
+            <div>
+                <h3>Palestras em Áudio</h3>
+                <p>Smith&Co Business strategy involves a proprietary set of actions that enables a company to be more than just the sum of its parts. The most important role of the is to help business units achieve leadership points.</p>
+            </div>
+        </section>
+        <section class="artigos">
+           <h2>ARTIGOS PERTINENTES</h2>
+           <div class="artigo">
+               <div class="imagem">
+                   <img src="imagens/mario-ferreira.jpg" alt="">
+               </div>
+               <div class="text-previa">
+                   <h3>Um filósofo</h3>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, vel! Molestias voluptatum aperiam quasi ducimus autem velit, eius laudantium rerum suscipit quos deleniti, error ab consequatur expedita, esse est quis!</p>
+               </div>
+           </div>
+           </div>  
+        </section>
+        <section class="video">
+            <div>
+                <iframe src="https://www.youtube.com/embed/ioEZcUjA2QE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <aside class="links">
+            <h2>SITES ÚTEIS</h2>
+        </aside>
+        <aside class="formulario">
+            <h2>CADASTRE-SE E RECEBA NOVIDADES NO E-MAIL.</h2>
+            <form action="">
+                <input type="text" name="name">
+                <input type="email" name="email" id="">
+                <input type="submit" value="ENVIAR">
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <h3>ACERVO | MÁRIO FERREIRA DOS SANTOS</h3>
+        <p>07 de Setembro de 2021, Distrito Federal, Brasil.</p>
+        <p>Este sitio tem o objetivo de reunir a obra do filósofo brasileiro, Mário Ferreira. Aqui também você encontra artigos e teses sobre sua filosofia. Bons Estudos!</p>
+        <a href="mailto:contato@acervomarioferreira.com.br">contato@acervomarioferreira.com.br</a>
+    </footer>
+</body>
+</html>
