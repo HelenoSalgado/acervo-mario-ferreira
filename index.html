@@ -7,7 +7,7 @@
     <title>Acervo | Mário Ferreira dos Santos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <style>
         *{
             margin:0;
@@ -16,14 +16,18 @@
         }
         :root{
             --fonte-de-titulo: 'Arvo', serif;
+            --font-de-artigos: 'Open Sans', sans-serif;
         }
         body{
             position: relative;
-            background-color: rgb(248, 248, 248);
+            background-color: rgb(255, 255, 255);
         }
         h1, h2, h3{
             font-family: var(--fonte-de-titulo);
             font-weight: normal;
+        }
+        p{
+            font-family: var(--font-de-artigos);
         }
         header{
             position: relative;
@@ -57,7 +61,7 @@
             margin: auto;
             max-width: 800px;
             height: auto;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(248, 248, 248);
             text-align: center;
             padding: 2rem;
             border-radius: 0 0 3px 3px;
@@ -151,13 +155,61 @@
             transform: translate(-50%, -50%);
         }
         aside.links{
-            height: 300px;
+            height: 50vh;
+        }
+        .links > h2{
+            margin-top: 2rem;
         }
         aside.formulario{
+            position: relative;
             height: 100vh;
+            text-align: center;
         }
+        .formulario > div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 800px;
+            min-width: 300px;
+            transform: translate(-50%, -50%);
+            border: 1px solid white;
+            border-radius: 15px;
+            padding: 1rem;
+        }
+        .formulario form{
+            margin: auto;
+            max-width: 400px;
+        }
+        .formulario h2{
+            margin-bottom: 2rem;
+            color: white;
+            font-size: 1.3rem;
+            text-shadow: 0px 2px 2px black;
+        }
+        .formulario input{
+            display: block;
+            width: 100%;
+            margin: 1rem auto;
+            padding: .3rem;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.582);
+            border-radius: 3px;
+            border: 3px solid rgb(255, 255, 255);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.322);
+        }
+        .formulario input:last-child{
+            width: 100px;
+            background-color: rgb(17, 17, 17);
+            color: white;
+            border: none;
+        }
+        
         aside > h2{
             text-align: center;
+        }
+        div.img-bottom{
+            background: url(imagens/athens-art-school.jpg) no-repeat center bottom fixed;
+            background-size: cover;
         }
         footer{
             background-color: rgb(17, 17, 17);
@@ -172,11 +224,16 @@
             margin: auto;
             max-width: 800px;
             padding: .5rem;
+            font-weight: lighter;
+            font-size: .9rem;
         }
         footer > a{
+            margin: auto;
+            width: 90%;
             padding: .5rem;
             margin-bottom: .5rem;
             color: goldenrod;
+            font-size: .9rem;
         }
     </style>
 </head>
@@ -228,23 +285,27 @@
                 <iframe src="https://www.youtube.com/embed/ioEZcUjA2QE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
+    </main>
         <aside class="links">
             <h2>SITES ÚTEIS</h2>
         </aside>
-        <aside class="formulario">
+         <div class="img-bottom">
+    <aside class="formulario">
+        <div>
             <h2>CADASTRE-SE E RECEBA NOVIDADES NO E-MAIL.</h2>
             <form action="">
-                <input type="text" name="name">
-                <input type="email" name="email" id="">
+                <input type="text" name="name" placeholder="NOME COMPLETO">
+                <input type="email" name="email" id="" placeholder="EMAIL">
                 <input type="submit" value="ENVIAR">
             </form>
+        </div>
         </aside>
-    </main>
     <footer>
         <h3>ACERVO | MÁRIO FERREIRA DOS SANTOS</h3>
         <p>07 de Setembro de 2021, Distrito Federal, Brasil.</p>
         <p>Este sitio tem o objetivo de reunir a obra do filósofo brasileiro, Mário Ferreira. Aqui também você encontra artigos e teses sobre sua filosofia. Bons Estudos!</p>
         <a href="mailto:contato@acervomarioferreira.com.br">contato@acervomarioferreira.com.br</a>
     </footer>
+</div>    
 </body>
 </html>
