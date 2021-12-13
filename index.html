@@ -33,21 +33,26 @@
             position: relative;
             width: 100%;
             height: 100vh;
-            background: black url(imagens/athens-art-school.jpg) no-repeat center center;
+            background: black url(imagens/areopago.jpg) no-repeat center center;
             background-size: cover;
             color: white;
             text-align: center;
+            box-shadow: 0px 0px 5px black;
         }
         header div.filtro{
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.534);
-        }
+            background-color: rgba(0, 0, 0, 0.548);
+        } 
         header  div.text{
             position: absolute;
             width: 90%;
             top: 50%;
             left: 50%;
+             padding: .5rem;
+           /* background-color: rgba(0, 0, 0, 0.692); */
+            border: .5px solid white;
+            border-radius: 5px;
             transform: translate(-50%, -50%);
         }
         header h1{
@@ -57,6 +62,24 @@
             margin-top: 1rem;
             font-size: .8rem;
             line-height: 1.2rem;
+        }
+        nav{
+            background-color: rgb(17, 17, 17);
+            padding: .3rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a{
+            margin-left: 1rem;
+            text-decoration: none;
+            color: goldenrod;
+            transition: .2s ease-in;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            border-radius: 3px;
+            color: white;
         }
         section.sobre{
             margin: auto;
@@ -93,11 +116,11 @@
             margin: 1rem auto;
             width: 350px;
             padding: 1rem;
-            border-radius: 5px;
-            border-left: 1px solid rgba(0, 0, 0, 0.555);
+            border-left: 1px solid rgba(0, 0, 0, 0.288);
         }
         .arquivos h3{
             margin: .5rem;
+            font-weight: bold;
         }
         section.artigos{
             position: relative;
@@ -140,7 +163,7 @@
         }
         section.video{
             position: relative;
-            height: 80vh;
+            height: 100vh;
             background: black url(imagens/planet-gf6fd8c6fb_1280.jpg) no-repeat center center;
             background-size: cover;
             padding: 1rem;
@@ -162,10 +185,24 @@
             border: 1px solid goldenrod;
         }
         aside.links{
-            height: 50vh;
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            padding: 2rem 1rem;
+        }
+        .links div{
+            margin: 1rem auto;
+            max-width: 300px;
+            height: 100px;
+            object-fit: contain;
+        }
+        .links div > img{
+            width: 100%;
+            height: 100%;
         }
         .links > h2{
-            margin-top: 2rem;
+            width: 100%;
+            margin: 2rem 0;
         }
         aside.formulario{
             position: relative;
@@ -210,7 +247,9 @@
             color: white;
             border: none;
         }
-        
+        .formulario input[type=submit]:hover{
+            color: goldenrod;
+        }
         aside > h2{
             text-align: center;
         }
@@ -253,6 +292,9 @@
             </div>   
         </div>
     </header>
+    <nav>
+        <a href="#">Artigos</a><a href="#">Palestras</a>
+    </nav>
     <main>
         <section class="sobre">
             <h2>QUEM FOI MÁRIO FERREIRA DOS SANTOS?</h2>
@@ -295,6 +337,15 @@
     </main>
         <aside class="links">
             <h2>SITES ÚTEIS</h2>
+            <div>
+                <img src="https://olavodecarvalho.org/wp-content/uploads/2021/01/logo-olavo-new-brown.png" alt="logo do site do professor Olavo, uma águia">
+            </div>
+            <div>
+                <img src="https://marioferreiradossantosfilosofiaconcreta.files.wordpress.com/2015/04/cropped-mc3a1rio-ferreira-dos-santos-mathesis-magiste-copy.jpg" alt="Site para estudos sobre Mário Ferreira dos Santos">
+            </div>
+            <div style="background-color: gray;">
+                <a href="http://fisosofiaconcreta.blogspot.com/">http://fisosofiaconcreta.blogspot.com/</a>
+            </div>
         </aside>
          <div class="img-bottom">
     <aside class="formulario">
