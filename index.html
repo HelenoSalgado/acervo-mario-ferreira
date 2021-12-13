@@ -11,284 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imagens/mario-ferreira.jpg" type="image/jpg">
-    <style>
-        *{
-            margin:0;
-            padding: 0;
-            border: none;
-        }
-        :root{
-            --fonte-de-titulo: 'Arvo', serif;
-            --font-de-artigos: 'Open Sans', sans-serif;
-        }
-        body{
-            position: relative;
-            background-color: rgb(255, 255, 255);
-        }
-        h1, h2, h3{
-            font-family: var(--fonte-de-titulo);
-            font-weight: normal;
-        }
-        p{
-            font-family: var(--font-de-artigos);
-        }
-        header{
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            background: black url(imagens/areopago.jpg) no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            box-shadow: 0px 0px 5px black;
-        }
-        header div.filtro{
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.548);
-        } 
-        header  div.text{
-            position: absolute;
-            width: 90%;
-            top: 50%;
-            left: 50%;
-             padding: .5rem;
-           /* background-color: rgba(0, 0, 0, 0.692); */
-            border: .5px solid white;
-            border-radius: 5px;
-            transform: translate(-50%, -50%);
-        }
-        header h1{
-            text-shadow: 0px 1px 5px black;
-        }
-        header p{
-            margin-top: 1rem;
-            font-size: .8rem;
-            line-height: 1.2rem;
-        }
-        nav{
-            background-color: rgb(17, 17, 17);
-            padding: .3rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a{
-            margin-left: 1rem;
-            text-decoration: none;
-            color: goldenrod;
-            transition: .2s ease-in;
-        }
-        nav a:hover{
-            text-decoration: underline;
-            border-radius: 3px;
-            color: white;
-        }
-        section.sobre{
-            margin: auto;
-            max-width: 800px;
-            height: auto;
-            background-color: rgb(252, 252, 252);
-            text-align: center;
-            padding: 2rem;
-            border-radius: 0 0 3px 3px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
-        }
-        section.sobre h2{
-            max-width: 800px;
-            margin: 3rem auto 1rem auto;
-        }
-        section.sobre p{
-            max-width: 800px;
-            margin: 1rem auto;
-            line-height: 1.3rem;
-        }
-        section.arquivos{
-            margin: 4rem 0;
-            padding: .5rem;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            background-color: rgb(17, 17, 17);
-            color: rgb(238, 238, 238);
-        }
-        .arquivos > h2{
-            margin: 1rem;
-            width: 100%;
-            text-align: center;
-        }
-        .arquivos div{
-            margin: 1rem auto;
-            width: 350px;
-            padding: 1rem;
-            border-left: 1px solid rgba(255, 255, 255, 0.479);
-        }
-        .arquivos h3{
-            margin: .5rem;
-            font-weight: bold;
-        }
-        section.artigos{
-            position: relative;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
-            margin: 5rem auto;
-            max-width: 1200px;
-            padding: 1rem;
-        }
-        .artigos > h2{
-            margin-bottom: 2rem;
-        }
-        .artigo{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: left;
-        }
-        div.imagem{
-            margin: .5rem;
-            width: 400px;
-            height: 300px;
-            overflow: hidden;
-            border: 1px solid goldenrod;
-            border-radius: 3px;
-        }
-        div.text-previa{
-            margin: .5rem;
-            max-width: 600px;
-            height: 300px;
-            border-bottom: 1px solid goldenrod;
-        }
-        .text-previa h3{
-            margin: 1rem;
-        }
-        .text-previa p{
-          margin: 1rem;
-        }
-        div.imagem img{
-           width: 100%; 
-           border-radius: 3px; 
-        }
-        section.video{
-            position: relative;
-            height: 100vh;
-            background-color: rgb(17, 17, 17);
-            /* background: black url(imagens/athens-art-school.jpg) no-repeat center center;
-            background-size: cover; */
-            padding: 1rem;
-        }
-        .video > div{
-            position: relative;
-            margin: auto;
-            max-width: 600px;
-            height: 100%;
-        }
-        .video div > iframe{
-            position: absolute;
-            width: 100%;
-            height: 350px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 3px;
-            border: 1px solid goldenrod;
-        }
-        aside.links{
-            display: flex;
-            flex-wrap: wrap;
-            min-height: 60vh;
-            padding: 2rem 1rem;
-        }
-        .links div{
-            margin: 1rem auto;
-            max-width: 300px;
-            height: 100px;
-            object-fit: contain; 
-        }
-        .links div > img{
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-        }
-        .links > h2{
-            width: 100%;
-            margin: 2rem 0;
-        }
-        aside.formulario{
-            position: relative;
-            height: 100vh;
-            text-align: center;
-        }
-        .formulario > div{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            max-width: 800px;
-            min-width: 300px;
-            transform: translate(-50%, -50%);
-            border: 1px solid white;
-            border-radius: 15px;
-            padding: 1rem;
-        }
-        .formulario form{
-            margin: auto;
-            max-width: 400px;
-        }
-        .formulario h2{
-            margin-bottom: 2rem;
-            color: white;
-            font-size: 1.3rem;
-            text-shadow: 0px 2px 2px black;
-        }
-        .formulario input{
-            display: block;
-            width: 100%;
-            margin: 1rem auto;
-            padding: .3rem;
-            height: 30px;
-            background-color: rgba(255, 255, 255, 0.582);
-            border-radius: 3px;
-            border: 3px solid rgb(255, 255, 255);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.322);
-        }
-        .formulario input:last-child{
-            width: 100px;
-            background-color: rgb(17, 17, 17);
-            color: white;
-            border: none;
-        }
-        .formulario input[type=submit]:hover{
-            color: goldenrod;
-        }
-        aside > h2{
-            text-align: center;
-        }
-        div.img-bottom{
-            background: url(imagens/Mário-Ferreira-dos-Santos.jpg) no-repeat center bottom fixed;
-            background-size: cover;
-        }
-        footer{
-            background-color: rgb(17, 17, 17);
-            padding: 2rem;
-            text-align: center;
-            color: whitesmoke;
-        }
-        footer > h3{
-            margin-bottom: 1rem;
-        }
-        footer > p{
-            margin: auto;
-            max-width: 800px;
-            padding: .5rem;
-            font-weight: lighter;
-            font-size: .9rem;
-        }
-        footer > a{
-            margin: auto;
-            width: 90%;
-            padding: .5rem;
-            margin-bottom: .5rem;
-            color: goldenrod;
-            font-size: .9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -334,7 +57,27 @@
                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, vel! Molestias voluptatum aperiam quasi ducimus autem velit, eius laudantium rerum suscipit quos deleniti, error ab consequatur expedita, esse est quis!</p>
                </div>
            </div>
-           </div>  
+           </div>
+           <div class="artigo">
+            <div class="imagem">
+                <img src="imagens/mario-ferreira.jpg" alt="">
+            </div>
+            <div class="text-previa">
+                <h3>Um filósofo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, vel! Molestias voluptatum aperiam quasi ducimus autem velit, eius laudantium rerum suscipit quos deleniti, error ab consequatur expedita, esse est quis!</p>
+            </div>
+        </div>
+        </div>
+        <div class="artigo">
+            <div class="imagem">
+                <img src="imagens/mario-ferreira.jpg" alt="">
+            </div>
+            <div class="text-previa">
+                <h3>Um filósofo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, vel! Molestias voluptatum aperiam quasi ducimus autem velit, eius laudantium rerum suscipit quos deleniti, error ab consequatur expedita, esse est quis!</p>
+            </div>
+        </div>
+        </div>
         </section>
         <section class="video">
             <div>
