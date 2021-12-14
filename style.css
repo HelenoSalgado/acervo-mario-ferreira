@@ -19,7 +19,9 @@ p{
     font-family: var(--font-de-artigos);
 }
 a{
+    font-family: var(--font-de-artigos);
     color: goldenrod;
+    text-decoration: none;
 }
 header{
     position: relative;
@@ -64,7 +66,6 @@ nav{
 }
 nav a{
     margin-left: 1rem;
-    text-decoration: none;
     transition: .2s ease-in;
 }
 nav a:hover{
@@ -91,6 +92,7 @@ article h4{
 }
 article p{
     margin-top: 1rem;
+    font-size: 1.1rem;
     text-indent: 30px;
 }
 .referencia{
@@ -197,8 +199,6 @@ div.text-previa{
     display: block;
     width: 90px;
     margin: .9rem;
-    font-family: var(--font-de-artigos);
-    text-decoration: none;
     font-size: 1rem;
     padding: .3rem;
     color: rgba(0, 0, 0, 0.808);
@@ -332,6 +332,5 @@ footer > a{
     width: 90%;
     padding: .5rem;
     margin-bottom: .5rem;
-    color: goldenrod;
     font-size: .9rem;
 }
