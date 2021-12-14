@@ -92,6 +92,7 @@ article h4{
 }
 article p{
     margin-top: 1rem;
+    line-height: 1.3rem;
     font-size: 1.1rem;
     text-indent: 30px;
 }
