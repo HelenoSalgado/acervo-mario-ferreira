@@ -11,12 +11,15 @@ body{
     position: relative;
     background-color: rgb(255, 255, 255);
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     font-family: var(--fonte-de-titulo);
     font-weight: normal;
 }
 p{
     font-family: var(--font-de-artigos);
+}
+a{
+    color: goldenrod;
 }
 header{
     position: relative;
@@ -62,13 +65,54 @@ nav{
 nav a{
     margin-left: 1rem;
     text-decoration: none;
-    color: goldenrod;
     transition: .2s ease-in;
 }
 nav a:hover{
     text-decoration: underline;
     border-radius: 3px;
     color: white;
+}
+article{
+    margin: 2rem auto;
+    max-width: 1100px;
+    padding: 1rem;
+    line-height: 1.4rem;
+    word-spacing: 4px;
+    text-align: justify;
+    background-color: rgb(250, 251, 250);
+    border-radius: 3px;
+}
+article > h1{
+    margin: 2rem 0;
+    line-height: 1.6rem;
+}
+article h4{
+    margin: 1rem 0;
+}
+article p{
+    margin-top: 1rem;
+    text-indent: 30px;
+}
+.referencia{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid black;
+    background-color: rgb(247, 247, 247);
+    border-radius: 3px;
+}
+.referencia > p{
+    text-indent: 0px;
+}
+.referencia a:hover{
+    color: black;
+}
+article li{
+    width: 90%;
+    margin-left: 1rem;
+    font-style: italic;
+}
+article li > p{
+    text-indent: 0;
 }
 section.sobre{
     margin: auto;
@@ -139,15 +183,34 @@ div.imagem{
     border-radius: 3px;
 }
 div.text-previa{
+    position: relative;
     max-width: 600px;
-    height: 300px;
-    
+    height: auto;
 }
 .text-previa h3{
     margin: 1rem;
 }
 .text-previa p{
-  margin: 1rem;
+    margin: 0 1rem ;
+}
+.text-previa p::after{
+    content: '\00A0[...]';
+}
+.text-previa a{
+    display: block;
+    width: 90px;
+    margin: .9rem;
+    font-family: var(--font-de-artigos);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: .3rem;
+    color: rgba(0, 0, 0, 0.808);
+    background-image: linear-gradient(to bottom, white 50%, rgb(236, 236, 236));
+    border-radius: 3px;
+}
+.text-previa a:hover{
+    color: black;
+    text-decoration: underline;
 }
 div.imagem img{
    width: 100%; 
