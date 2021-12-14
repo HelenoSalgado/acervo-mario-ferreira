@@ -75,7 +75,7 @@ nav a:hover{
 article{
     margin: 2rem auto;
     max-width: 1100px;
-    padding: 1rem;
+    padding: 20px;
     line-height: 1.4rem;
     word-spacing: 4px;
     text-align: justify;
@@ -94,11 +94,8 @@ article p{
     text-indent: 30px;
 }
 .referencia{
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: 2rem;
     border-top: 1px solid black;
-    background-color: rgb(247, 247, 247);
-    border-radius: 3px;
 }
 .referencia > p{
     text-indent: 0px;
