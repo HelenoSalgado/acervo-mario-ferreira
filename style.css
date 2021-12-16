@@ -204,7 +204,7 @@ div.text-previa{
 .botao-artigo{
     display: block;
     text-align: center;
-    width: fit-content;
+    width: max-content;
     margin: .9rem;
     font-size: 1rem;
     font-style: oblique;
