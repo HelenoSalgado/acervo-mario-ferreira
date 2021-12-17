@@ -286,6 +286,7 @@ aside.formulario{
 .formulario form{
     margin: auto;
     max-width: 400px;
+    padding-right: .5rem;
 }
 .formulario h2{
     margin-bottom: 2rem;
