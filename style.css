@@ -317,7 +317,7 @@ aside > h2{
     text-align: center;
 }
 div.img-bottom{
-    background: url(imagens/Mário-Ferreira-dos-Santos.jpg) no-repeat center bottom fixed;
+    background: url(imagens/Mário-Ferreira-dos-Santos.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 footer{
