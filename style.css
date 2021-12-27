@@ -42,7 +42,7 @@ header{
 header div.filtro{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.548);
+    background-color: rgba(0, 0, 0, 0.363);
 } 
 header  div.text{
     position: absolute;
@@ -271,6 +271,7 @@ aside.formulario{
     position: relative;
     height: 100vh;
     text-align: center;
+    box-shadow: inset 6px 6px 5px 0px rgba(0, 0, 0, 0.233);
 }
 .formulario > div{
     position: absolute;
