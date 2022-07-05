@@ -1,12 +1,11 @@
 # acervo-mario-ferreira
 
-
-
-### 1. [Acervo Mario Ferreira dos Santos](https://acervomarioferreira.com.br).
+##[Acervo Mario Ferreira dos Santos](https://acervomarioferreira.com.br).
 <br>
-<img src="imagens/captura-de-tela-de-2022-06.png">
-##
+Site destinado a publicações a respeito da vida e obra do filósofo brasileiro Mário Ferreira dos Santos [em Desenvolvimento...]
+<br>
 📦 Nova funcionalidade
 🆙 Atualização
 💓 correção de bug
 🏁 release
+##
